@@ -50,10 +50,16 @@ public class Menu {
                    library.checkOutGame(input.nextInt() - 1);
                    break;
                case 5:
+                   input.nextLine();
                    //handles checking in a game
+                   System.out.println("What game are you checking in?");
+                   library.listCheckOut("checkIn");
+                   library.checkInGame(input.nextInt() - 1);
+                   System.out.println();
                    break;
                case 6:
                    //handles Viewing checked out games
+                   library.listCheckOut("viewCheckedOut");
                    break;
                case 7:
                    //handles Exiting the program
